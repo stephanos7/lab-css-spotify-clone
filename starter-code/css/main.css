@@ -1,10 +1,8 @@
 /*
 Colors:
-
 Text: 1A1A1A
 Green: #00B172
 White: #FFF
-
 */
 
 /* Necessary CSS Resets (would noramlly go in a normalise.css file */
@@ -71,16 +69,31 @@ nav .header-logo {
     max-height: 50px;
     max-width: 20%;
     float: left;
-    transition-property: margin-top;
-    transition-delay: 0s;
-    transition-duration: 2s ease-in-out;
-    
-    
+    position: relative;
+    animation-delay: 2s;
+    animation: bounce;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 }   
 
-nav .header-logo:hover {
-    margin-top: 15px;
+
+
+@keyframes bounce {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    35%  {top: 180px;}
+    45%  {top: 160px;}
+    55%  {top: 120px;}
+    65%  {top: 75px;}
+    75%  {top: 50px;}
+    85%  {top: 25px;}
+    100% {top: 1px;}
 }
+
+
+
+
+
 
 nav .nav-bar {
     float: right;
@@ -244,5 +257,3 @@ hr {
     top: 400px;
     left: 410px;
 }
-
-
